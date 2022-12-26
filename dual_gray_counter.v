@@ -24,8 +24,8 @@ module dual_gray_counter#(
 parameter addr_size=4
 )(
     input clk,
-    output [addr_size:0] gray_count_st,
-    output [addr_size-1:0] gray_count_nd,//msb for cycle detction 
+    output [addr_size:0] gray_count_st,//msb for cycle detction 
+    output [addr_size-1:0] gray_count_nd,
     input reset_n,
     input en
     );
